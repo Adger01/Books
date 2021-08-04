@@ -66,3 +66,10 @@ sudo crontab -e
 这里会把www当成一个命令看待。
 ```
 
+## 如何查看cron是否执行
+
+```
+crontab的执行日志
+tail -f /var/log/cron
+```
+
