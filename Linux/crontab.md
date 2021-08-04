@@ -1,3 +1,12 @@
+## Laravel中创建crontab
+
+```
+sudo crontab -u www -e
+* * * * * export APP_ENV=production && /path/to/php /path/to/project/artisan schedule:run >> /dev/null 2>&1
+```
+
+
+
 ## crontab引发的命案
 
 使用`laravel`框架创建的`crontab`
